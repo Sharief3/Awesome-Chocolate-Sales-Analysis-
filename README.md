@@ -12,7 +12,7 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
 .3.sales-person & product performance
 .4. low box shipment analysis
 .5. save and publish the project
--Dashboard Interaction <a href="C:\Users\SHAIK SHARIEF\Pictures\Screenshots\Screenshot 2025-08-03 114556.png">View Dashboard</a>
+-Dashboard Interaction <a href="C:\Users\SHAIK SHARIEF\Pictures\Screenshots">View Dashboard</a>
 
 
 
