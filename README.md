@@ -4,7 +4,7 @@
 To design and develop a comprehensive sales analytics dashboard in Power Bi for a fictional company, Awesome Chocolate, with the goal of providing actionable insights into key business metrics such as sales, boxes, shipments, cost, profit, and employee performance. This end-to-end BI solution covers the entire workflow-from data modeling using a star schema and writing DAX measures, to creating an interactive, visually compelling dashboard complete with tooltips, dynamic views, and filter panels
 
 ## Data Set Used
-<a href=https://app.powerbi.com/reportEmbed?reportId=4bd69c58-b870-4902-9338-d5d2db58cc40&autoAuth=true&ctid=eb322777-d3cb-4cf3-8785-b55cf5ec11ce> Awesome Chocolate Sales Analysis</a>
+<a href=https://app.powerbi.com/links/iNNMN3jznq?ctid=eb322777-d3cb-4cf3-8785-b55cf5ec11ce&pbi_source=linkShare> Awesome Chocolate Sales Analysis</a>
 
 ## The Setup
 .1. chocolate sales analytics
