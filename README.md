@@ -32,7 +32,7 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
 
 -	# Dashboard 
 
--	Dashboard Interaction <a href=” "C:\Users\SHAIK SHARIEF\Pictures\Screenshots\Screenshot 2025-08-03 114556.png"">View Dashboard</a>
+-	Dashboard Interaction <a href="C:\Users\SHAIK SHARIEF\Pictures\Screenshots\Screenshot 2025-08-03 114556.png">View Dashboard</a>
 
 
 
