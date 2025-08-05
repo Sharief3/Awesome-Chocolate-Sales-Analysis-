@@ -38,7 +38,8 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
 -	 Final version(with two options)
 
 ## Dashboard
-C:\Users\SHAIK SHARIEF\Pictures\Screenshots\Screenshot 2025-08-03 114556.png
+<img width="1322" height="736" alt="Screenshot 2025-08-03 114556" src="https://github.com/user-attachments/assets/754f8dda-4563-4054-bced-7d68e1e6ad66" />
+
 
 # Project insights
  
