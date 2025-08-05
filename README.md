@@ -3,11 +3,11 @@
 ## Project Objective
 To design and develop a comprehensive sales analytics dashboard in Power Bi for a fictional company, Awesome Chocolate, with the goal of providing actionable insights into key business metrics such as sales, boxes, shipments, cost, profit, and employee performance. This end-to-end BI solution covers the entire workflow-from data modeling using a star schema and writing DAX measures, to creating an interactive, visually compelling dashboard complete with tooltips, dynamic views, and filter panels
 ## The Setup
-. chocolate sales analytics
-. sales, boxes, costs & profits
-. sales-person & product performance
-. low box shipment analysis
-. save and publish the project
+.1. chocolate sales analytics
+.2. sales, boxes, costs & profits
+.3.sales-person & product performance
+.4. low box shipment analysis
+.5. save and publish the project
 
 ## Process
 -	Awesome Chocolate Data Model
