@@ -77,20 +77,28 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
  
    * Wireframing:
           The design process begins with a wireframe in PowerPoint, laying out a **summary view at the top** (key numbers with month-on-month changes) and **detailed views below** (product and salesperson performance, trend analysis)
+     
       *Canvas Settings:
           The report canvas is set to a custom size (e.g., 1080x1920 pixels) for optimal viewing.
+     
       *New Card Visual:
           This enhanced visual is used to display multiple key metrics (sales, boxes, shipments, costs, profit) along with their month-on-month changes as reference labels . It allows for extensive styling, including conditional formatting for negative changes.
+     
        *Images/Icons:
-            b Small custom icons are added next to measures in card visuals for better context and visual appeal
+     custom icons are added next to measures in card visuals for better context and visual appeal
+     
  * Gauge Chart :
       Used for the profit percentage indicator, allowing a visual representation of performance against a target
-        *Field Parameters:
-              A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart 
+   
+   *Field Parameters:
+              A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart
+   
       *New Slicer Visual:
-           Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states 
+           Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states
+   
       *Grouping (Histogram):
             The `boxes` column is grouped into bins to create a histogram showing the distribution of shipment sizes, highlighting the density of low-box shipments
+   
       * Zoom Slider:
             Enabled on the x-axis of the histogram to allow interactive zooming into specific ranges of box bins during presentation
         
