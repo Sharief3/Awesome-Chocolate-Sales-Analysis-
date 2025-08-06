@@ -78,37 +78,37 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
    * Wireframing:
           The design process begins with a wireframe in PowerPoint, laying out a **summary view at the top** (key numbers with month-on-month changes) and **detailed views below** (product and salesperson performance, trend analysis)
      
-      *Canvas Settings:
+     * Canvas Settings:
           The report canvas is set to a custom size (e.g., 1080x1920 pixels) for optimal viewing.
      
-      *New Card Visual:
+     * New Card Visual:
           This enhanced visual is used to display multiple key metrics (sales, boxes, shipments, costs, profit) along with their month-on-month changes as reference labels . It allows for extensive styling, including conditional formatting for negative changes.
      
-       *Images/Icons:
+ * Images/Icons:
      custom icons are added next to measures in card visuals for better context and visual appeal
      
  * Gauge Chart :
       Used for the profit percentage indicator, allowing a visual representation of performance against a target
    
-   *Field Parameters:
+   * Field Parameters:
               A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart
    
-      *New Slicer Visual:
+   * New Slicer Visual:
            Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states
    
-      *Grouping (Histogram):
+   * Grouping (Histogram):
             The `boxes` column is grouped into bins to create a histogram showing the distribution of shipment sizes, highlighting the density of low-box shipments
    
-      * Zoom Slider:
+   * Zoom Slider:
             Enabled on the x-axis of the histogram to allow interactive zooming into specific ranges of box bins during presentation
         
-        * Table Formatting:
+   * Table Formatting:
              Detailed formatting is applied to tables, including image sizing, row padding, column renaming, and conditional formatting (icons for profit target, data bars for profit percentage
           
-      * Bookmarks and Selection Panel:
+ * Bookmarks and Selection Panel:
           Used to create interactive toggles (people vs. product detail tables) on the same report areas
         
-        * Tooltips:
+ * Tooltips:
            A dedicated tooltip page is created for the trend chart, showing a donut chart breakdown of the selected measure by geography for a specific month. Tooltip pages are set to a smaller page type and can have distinct background colors
 
 # The Data Models
