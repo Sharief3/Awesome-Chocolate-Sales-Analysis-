@@ -52,10 +52,10 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
 
 *   **Key Calculations and Measures (DAX)**
     *   The project emphasizes calculating various Key Performance Indicators (KPIs) or measures
-    *   **Basic Measures**: Total sales (sum of sales column), total boxes (sum of boxes column), and total shipments (count of rows in the shipments table)
-    *   **Cost and Profitability**: Total cost calculation involves joining shipment and product data to multiply boxes by cost per box . Total profit is then calculated as total sales minus total costs, and profit percentage is derived from these.
-    *   **Low Box Shipments**: `LBS Count` is calculated by counting shipments with less than 50 boxes, and `LBS Percentage` is derived from `LBS Count` divided by `Total Shipments`.
-    *   **Time Intelligence**: Month-on-month and year-on-year changes for key metrics are calculated using DAX functions like `PREVIOUSMONTH`. The calendar table is marked as a date table in Power BI to facilitate these calculations . Derived columns like month number, month name, and year are added to the calendar table in Power Query for easier analysis and visualization.
+      **Basic Measures**: Total sales (sum of sales column), total boxes (sum of boxes column), and total shipments (count of rows in the shipments table)
+      **Cost and Profitability**: Total cost calculation involves joining shipment and product data to multiply boxes by cost per box . Total profit is then calculated as total sales minus total costs, and profit percentage is derived from these.
+      **Low Box Shipments**: `LBS Count` is calculated by counting shipments with less than 50 boxes, and `LBS Percentage` is derived from `LBS Count` divided by `Total Shipments`.
+      **Time Intelligence**: Month-on-month and year-on-year changes for key metrics are calculated using DAX functions like `PREVIOUSMONTH`. The calendar table is marked as a date table in Power BI to facilitate these calculations . Derived columns like month number, month name, and year are added to the calendar table in Power Query for easier analysis and visualization.
       **Latest Month Metrics**: Specific measures like `Total Sales Latest Month` and `Latest Month-on-Month Sales Change` are created to display current performance figures at a grand total level in card visuals, ensuring dynamic filtering behavior.
         **Profit Target Indicator**: A custom measure calculates whether a salesperson's profit percentage meets a defined target, using a binary (or ternary) indicator for conditional formatting
 
@@ -64,7 +64,7 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
       **Canvas Settings**: The report canvas is set to a custom size (e.g., 1080x1920 pixels) for optimal viewing.
       **New Card Visual**: This enhanced visual is used to display multiple key metrics (sales, boxes, shipments, costs, profit) along with their month-on-month changes as reference labels . It allows for extensive styling, including conditional formatting for negative changes.
         **Images/Icons**: Small custom icons are added next to measures in card visuals for better context and visual appeal
-    *   **Gauge Chart**: Used for the profit percentage indicator, allowing a visual representation of performance against a target
+    **Gauge Chart**: Used for the profit percentage indicator, allowing a visual representation of performance against a target
         **Field Parameters**: A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart 
       **New Slicer Visual**: Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states 
       **Grouping (Histogram)**: The `boxes` column is grouped into bins to create a histogram showing the distribution of shipment sizes, highlighting the density of low-box shipments
