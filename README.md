@@ -47,31 +47,31 @@ To design and develop a comprehensive sales analytics dashboard in Power Bi for 
   * The project focuses on **sales analytics for a fictional chocolate company called "Awesome Chocolate"** 
     *  1. It analyzes sales, boxes shipped, costs, and profits, assessing the performance of salespersons and products
     *  2. A special focus is given to "Low Box Shipments" (less than 50 boxes per shipment), calculating their count and percentage
-      3.*simplified star schema, consisting of a central "shipments" fact table and four dimension tables: salesperson, product, geography, and calendar (date) 
-    *   The shipment data spans 13 months, from February 1, 2023, to the end of February 2024
+    *  3.*simplified star schema, consisting of a central "shipments" fact table and four dimension tables: salesperson, product, geography, and calendar (date) 
+    *  4.* The shipment data spans 13 months, from February 1, 2023, to the end of February 2024
 
-  4.*Key Calculations and Measures (DAX)*
-    *   The project emphasizes calculating various Key Performance Indicators (KPIs) or measures
-      5.*Basic Measures: Total sales (sum of sales column), total boxes (sum of boxes column), and total shipments (count of rows in the shipments table)
-      6.*Cost and Profitability: Total cost calculation involves joining shipment and product data to multiply boxes by cost per box . Total profit is then calculated as total sales minus total costs, and profit percentage is derived from these.
-      7.*Low Box Shipments: `LBS Count` is calculated by counting shipments with less than 50 boxes, and `LBS Percentage` is derived from `LBS Count` divided by `Total Shipments`.
-      8.*Time Intelligence: Month-on-month and year-on-year changes for key metrics are calculated using DAX functions like `PREVIOUSMONTH`. The calendar table is marked as a date table in Power BI to facilitate these calculations . Derived columns like month number, month name, and year are added to the calendar table in Power Query for easier analysis and visualization.
-      9.*Latest Month Metrics: Specific measures like `Total Sales Latest Month` and `Latest Month-on-Month Sales Change` are created to display current performance figures at a grand total level in card visuals, ensuring dynamic filtering behavior.
-        10.*Profit Target Indicator: A custom measure calculates whether a salesperson's profit percentage meets a defined target, using a binary (or ternary) indicator for conditional formatting
+  4.**Key Calculations and Measures (DAX)
+    *  1.* The project emphasizes calculating various Key Performance Indicators (KPIs) or measures
+      5.**Basic Measures: Total sales (sum of sales column), total boxes (sum of boxes column), and total shipments (count of rows in the shipments table)
+      6.**Cost and Profitability: Total cost calculation involves joining shipment and product data to multiply boxes by cost per box . Total profit is then calculated as total sales minus total costs, and profit percentage is derived from these.
+      7.**Low Box Shipments: `LBS Count` is calculated by counting shipments with less than 50 boxes, and `LBS Percentage` is derived from `LBS Count` divided by `Total Shipments`.
+      8.**Time Intelligence: Month-on-month and year-on-year changes for key metrics are calculated using DAX functions like `PREVIOUSMONTH`. The calendar table is marked as a date table in Power BI to facilitate these calculations . Derived columns like month number, month name, and year are added to the calendar table in Power Query for easier analysis and visualization.
+      9.**Latest Month Metrics: Specific measures like `Total Sales Latest Month` and `Latest Month-on-Month Sales Change` are created to display current performance figures at a grand total level in card visuals, ensuring dynamic filtering behavior.
+        10.**Profit Target Indicator: A custom measure calculates whether a salesperson's profit percentage meets a defined target, using a binary (or ternary) indicator for conditional formatting
 
  11.**Dashboard Design and Features**
-    12.*Wireframing: The design process begins with a wireframe in PowerPoint, laying out a **summary view at the top** (key numbers with month-on-month changes) and **detailed views below** (product and salesperson performance, trend analysis)
-      13.*Canvas Settings: The report canvas is set to a custom size (e.g., 1080x1920 pixels) for optimal viewing.
-      14.*New Card Visual: This enhanced visual is used to display multiple key metrics (sales, boxes, shipments, costs, profit) along with their month-on-month changes as reference labels . It allows for extensive styling, including conditional formatting for negative changes.
-       15. *Images/Icons: Small custom icons are added next to measures in card visuals for better context and visual appeal
-   16. *Gauge Chart :Used for the profit percentage indicator, allowing a visual representation of performance against a target
-        17.*Field Parameters: A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart 
-      18.*New Slicer Visual: Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states 
-      19.*Grouping (Histogram): The `boxes` column is grouped into bins to create a histogram showing the distribution of shipment sizes, highlighting the density of low-box shipments
-      20.*Zoom Slider: Enabled on the x-axis of the histogram to allow interactive zooming into specific ranges of box bins during presentation 
-        21.*Table Formatting: Detailed formatting is applied to tables, including image sizing, row padding, column renaming, and conditional formatting (icons for profit target, data bars for profit percentage
+    12.**Wireframing: The design process begins with a wireframe in PowerPoint, laying out a **summary view at the top** (key numbers with month-on-month changes) and **detailed views below** (product and salesperson performance, trend analysis)
+      13.**Canvas Settings: The report canvas is set to a custom size (e.g., 1080x1920 pixels) for optimal viewing.
+      14.**New Card Visual: This enhanced visual is used to display multiple key metrics (sales, boxes, shipments, costs, profit) along with their month-on-month changes as reference labels . It allows for extensive styling, including conditional formatting for negative changes.
+       15. **Images/Icons: Small custom icons are added next to measures in card visuals for better context and visual appeal
+   16. **Gauge Chart :Used for the profit percentage indicator, allowing a visual representation of performance against a target
+        17.**Field Parameters: A "measure selector" field parameter is created to allow users to dynamically switch between different measures (sales, boxes, shipments, costs, profit) on a single trend line chart 
+      18.**New Slicer Visual: Provides a modern, button-like interface for the measure selector, with customizable styling for selected and unselected states 
+      19.**Grouping (Histogram): The `boxes` column is grouped into bins to create a histogram showing the distribution of shipment sizes, highlighting the density of low-box shipments
+      20.**Zoom Slider: Enabled on the x-axis of the histogram to allow interactive zooming into specific ranges of box bins during presentation 
+        21.**Table Formatting: Detailed formatting is applied to tables, including image sizing, row padding, column renaming, and conditional formatting (icons for profit target, data bars for profit percentage
       22.* Bookmarks and Selection Panel: Used to create interactive toggles (people vs. product detail tables) on the same report areas
-       23.* Tooltips: A dedicated tooltip page is created for the trend chart, showing a donut chart breakdown of the selected measure by geography for a specific month. Tooltip pages are set to a smaller page type and can have distinct background colors
+       23.** Tooltips: A dedicated tooltip page is created for the trend chart, showing a donut chart breakdown of the selected measure by geography for a specific month. Tooltip pages are set to a smaller page type and can have distinct background colors
 
 # The Data Models
 
